@@ -15,7 +15,7 @@ namespace Module5_FinishProject
             get 
             {
                 CurrentMaxId++;
-                return CurrentMaxId - 1; 
+                return CurrentMaxId; 
             }
             private set 
             { 

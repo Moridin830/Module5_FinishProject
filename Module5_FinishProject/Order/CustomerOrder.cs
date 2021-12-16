@@ -32,10 +32,32 @@ namespace Module5_FinishProject
             }
         }
 
+        public OrderItem[] ItemList
+        {
+
+        }
+
+        public OrderItem this[int index]
+        {
+            get
+            {
+                return (OrderItem)this[index];
+            }
+            set
+            {
+                ItemList[int] = value;
+            }
+        }
+
         public CustomerOrder(string Description)
         {
             this.Id = Order.CurrentMaxId;
             this.Description = Description;
+        }
+
+        public CustomerOrder(string Description, OrderItem[] Items)
+        {
+            this.Id = Order.CurrentMaxId;
         }
     }
 }

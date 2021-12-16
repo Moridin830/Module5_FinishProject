@@ -8,5 +8,6 @@ namespace Module5_FinishProject.OrderItems
 {
     public class Service : OrderItem
     {
+          
     }
 }
